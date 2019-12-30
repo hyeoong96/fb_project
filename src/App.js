@@ -50,7 +50,7 @@ class App extends React.Component {
   handlingSubmit = async(event) => {
     event.preventDefault()  //event 기능 -> 막는다.
     let result = await api.createPost({title:this.state.title, content:this.state.content, date:this.state.date})
-    console.log("완료됨!", result)
+    console.log("완료됨!!!", result)
     this.setState({title:'', content:'', date:''})
     this.getPosts()
   }
